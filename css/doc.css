@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: gray;
+}
+
+.reception{
+    width: 530px;
+    margin: 40px auto;
+    border: 10px groove yellow;
+    padding: 10px;
+    background-color: rgb(227, 239, 239);
+}
+
+.reception .reception_check li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.reception_check label{
+    font-size: 17px;
+    color: blue;
+    cursor: pointer;
+    font-weight: 700;
+}
+.reception_check input{
+    width: 240px;
+    outline: none;
+    padding: 4px 5px;
+    transition: all .3s ease;
+}
+.reception h1{
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 34px;
+    text-shadow: 0px 0px 10px yellow;
+}
+.reception_check input:hover{
+    box-shadow: 0px 0px 10px 4px gray;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.reception_check button{
+    padding: 4px 7px;
+    background-color: blanchedalmond;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px 4px gray;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.reception_check button:hover{
+    transform: scale(.9);
+    color: red;
+}
+
+.reception_check button a{
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease;
+}
+
+.reception_check button a:hover{
+    color: red;
+}
+
+
+
+.buyurtma{
+    
+}
