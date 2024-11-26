@@ -89,6 +89,179 @@ body{
 
 
 
-.buyurtma{
-    
+.buyurtma_init{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.buyurtma_init h1{
+    border: 10px groove green;
+    text-align: center;
+     font-size: 40px;
+     text-transform: uppercase;     
+     color: red;
+     padding: 10px 0px;
+     border-radius: 20px;
+     background-color: lime;
+     margin-bottom: 10px;
+}
+
+.buyurtma_init h3{
+    font-size: 26px;
+    color: rgb(138, 32, 32);
+    text-align: center;
+}
+
+.branch{
+    border: 10px groove green;
+    background-color: lime;
+}
+
+.brands{
+     margin: 10px 50px;
+     display: flex;
+     justify-content: space-between;
+}
+.value{
+    display: flex;
+    gap: 10px;
+    margin: 10px 50px;
+}
+
+.value label{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.value label:hover{
+    color: red;
+}
+
+.value input{
+    width: 20px;
+    outline: none;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.value input:hover{
+    transform: scale(1.1);
+}
+
+.brands label{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.brands label:hover{
+    color: red;
+}
+.brands input{
+    width: 250px;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid gray;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.brands input:hover{
+    box-shadow: 0px 0px 10px 4px gray; 
+}
+
+.buyurtma_manzili{
+    width: 600px;
+    margin: 0 auto;
+    background-color: lime;
+    border: 10px groove green;
+    padding: 10px 50px;
+}
+
+.buyurtma_manzili button{
+    padding: 6px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .3s ease;
+    background-color: rgba(255, 246, 246, 0.779);
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px gray;
+}
+.buyurtma_manzili button:hover{
+    transform: scale(1.1);
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.buyurtma_manzili h3{
+    font-size: 25px;
+    text-align: center;
+     color: rgb(147, 15, 15);
+     margin-bottom: 20px;
+}
+
+.buyurtma_manzili .address{
+    line-height: 30px;
+}
+
+.address li{
+    display: flex;
+    gap: 10px;
+}
+
+.address label{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s aese;
+}
+
+.address label:hover{
+    color: blue;
+}
+
+.address input{
+    width: 17px;
+}
+
+.buyurtma_help{
+    width: 600px;
+    margin: 0 auto;
+    background-color: lime;
+    border: 10px groove green;
+    padding: 10px 50px;
+}
+
+.buyurtma_help p{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: justify;
+}
+.btn{
+  margin: 15px 0px;
+}
+.buyurtma_help button{
+    padding: 7px 10px;
+    background-color: ghostwhite;
+    border: none;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.buyurtma_help button:hover{
+    transform: scale(1.1);
+    background-color: yellow;
+    box-shadow: 0px 0px 10px 4px yellow;
+}
+
+.buyurtma_help button a{
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
 }
