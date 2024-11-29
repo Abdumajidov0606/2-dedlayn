@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,4 +12,173 @@ ul{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+nav{
+    background-color: ghostwhite;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Jaro", sans-serif;
+    animation: logo 2s linear infinite;
+}
+
+@keyframes logo{
+    0%{
+        transform: rotateY(0deg);
+        color: blue;
+    }
+    50%{
+        transform: rotateY(180deg);
+        color: rgb(32, 32, 103);
+    }
+    100%{
+        color: rgb(33, 33, 147);
+        transform: rotateY(360deg);
+    }
+}
+
+.logo p{
+    font-size: 20px;
+}
+
+.logo h1{
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.links li{
+    position: relative;
+    padding: 4px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid blue;
+}
+
+.links li::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    transition: all .3s ease;
+    z-index: -7;
+    opacity: 0;
+}
+.links li:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.links li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.links li a:hover{
+    color: yellow;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.icons p{
+    font-size: 19px;
+    transition: all .3s ease;
+}
+.icons p:hover{
+    transform: scale(1.2);
+}
+.icons p a{
+    color: black;
+    transition: all .3s ease;
+}
+.icons p a:hover{
+   color: blue;
+}
+.search{
+    width: 230px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    transition: all .3s ease;
+    padding: 5px 10px;
+}
+
+.search:hover{
+    box-shadow: 0px 0px 5px 3px gray;
+}
+
+.search input{
+    padding: 4px 3px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.search label{
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+}
+
+
+
+.hero{
+    margin-top: 90px;
+    padding: 60px 0px;
+    background-color: #F1F5FB;
+}
+
+.hero .container{
+    border-radius: 10px;
+    border: 2px solid blue;
+    background-color: cyan;
+    padding: 20px 0px;
+}
+
+.hero .chegirma{
+    width: 1000px;
+    border-radius: 30px;
+    margin: 0 auto;
+    border: 2px solid red;
+    display: flex;
+}
+
+.rasm{
+
 }
