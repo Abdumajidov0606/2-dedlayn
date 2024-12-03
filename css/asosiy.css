@@ -163,7 +163,8 @@ nav .container{
 
 .hero{
     margin-top: 90px;
-    padding: 60px 0px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     background-color: #F1F5FB;
 }
 
@@ -343,3 +344,185 @@ nav .container{
 
 
 
+.jadvall{
+    padding-top: 10px;
+    background-color: whitesmoke;
+}
+.jadvall_about{
+    text-align: center;
+    background-color: #FF007D;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    border-radius: 100px 0px 100px 0px;
+}
+
+.jadvall_about h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.jadvall_about p{
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: yellow;
+}
+
+.jadvall .belgilash{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.jadvall .belgilash form{
+    width: 590px;
+    padding: 10px 10px;
+    text-align: left;
+    background-color: #FF007D;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.belgilash form p{
+    color: yellow;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.belgilash form li{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+.belgilash form label{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.belgilash form label:hover{
+    color: yellow;
+}
+.belgilash form input{
+    transition: all .3s ease;
+    width: 15px;
+}
+
+.belgilash form input:hover{
+    transform: scale(1.2);
+}
+
+
+
+.tables{
+    padding-bottom: 50px;
+}
+.tables h1{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0px 0px 10px red;
+    color: blue;
+}
+.tables table{
+    margin-top: 20px;
+    width: 100%;
+    border: 10px groove green;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    background-image: url("../imags/orqa\ fon.avif");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: green;
+}
+
+table .down{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.down a{
+    font-size: 20px;
+    color: green;
+}
+.tables table thead th{
+    padding: 10px;
+    border: 5px solid blue;
+    font-size: 20px;
+    color: rgb(12, 58, 12);
+}
+
+.tables table thead .bosh{
+    border-radius: 30px 0px 0px 0px;
+}
+.tables table thead .oxiri{
+    border-radius: 0px 30px 0px 0px;
+}
+
+.tables table tbody td{
+    font-size: 18px;
+    font-weight: 600;
+    border: 5px solid blue;
+}
+
+.tables table tbody .hp3{
+    border-radius: 0px 0px 0px 20px;
+}
+.tables table tbody .hp2{
+    border-radius: 0px 0px 20px 0px;
+}
+
+
+
+.products h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 6px inset red;
+    border-bottom: 6px inset red;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 20px red;
+}
+
+.products_desktops{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.products_desktops button{
+    padding: 5px 15px;
+    background-color: honeydew;
+    border: 1px solid gray;
+    border-radius: 20px;
+    transition: all .3s ease;
+    box-shadow: 0px 0px 10px 3px gray;
+    cursor: pointer;
+}
+.products_desktops button:hover{
+    transform: scale(1.1);
+    background-color: #BCE8FF;
+}
+.products_desktops a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.boxs{
+    border: 2px solid green;
+}
