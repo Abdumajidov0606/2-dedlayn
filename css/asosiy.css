@@ -72,39 +72,70 @@ nav .container{
     padding: 20px 0px;
 }
 
-.links li{
+.links button{
     position: relative;
-    padding: 4px 10px;
+    padding: 17px 90px;
     border-radius: 10px;
     overflow: hidden;
+    background-color: rgba(30, 30, 249, 0.248);
     border: 1px solid blue;
+    position: relative;
 }
 
-.links li::after{
+.links button::after{
     content: "";
     position: absolute;
     top: 0px;
     left: 0px;
     width: 10px;
-    height: 10px;
-    background-color: blue;
-    transition: all .3s ease;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.729);
+    transition: all .6s ease-in-out;
     z-index: -7;
     opacity: 0;
 }
-.links li:hover::after{
+.links button:hover::after{
     width: 100%;
     height: 100%;
     opacity: 1;
+    backdrop-filter: blur(5px);
 }
-.links li a{
+
+.links button::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 10px;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.729);
+    transition: all .6s ease-in-out;
+    z-index: -7;
+    opacity: 0;
+}
+.links button:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+.links button a{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     font-size: 20px;
     color: blue;
     font-weight: 600;
-    transition: all .3s ease;
+    transition: all .3s ease-in-out;
 }
-.links li a:hover{
+.links button a:hover{
     color: yellow;
 }
 .icons{
@@ -162,7 +193,7 @@ nav .container{
 
 
 .hero{
-    margin-top: 90px;
+    margin-top: 70px;
     padding-top: 60px;
     padding-bottom: 30px;
     background-color: #F1F5FB;
@@ -432,13 +463,13 @@ nav .container{
 .tables table{
     margin-top: 20px;
     width: 100%;
-    border: 10px groove green;
+    border: 10px groove #25043E;
     border-radius: 50px;
     overflow: hidden;
     padding: 30px;
     text-align: center;
     background-color: white;
-    background-image: url("../imags/orqa\ fon.avif");
+    background-image: url("../imgs/orqa\ fon.avif");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -456,9 +487,15 @@ table .down{
 }
 .tables table thead th{
     padding: 10px;
-    border: 5px solid blue;
+    border: 5px solid #420079;
     font-size: 20px;
     color: rgb(12, 58, 12);
+}
+
+.tables table tbody td{
+    font-size: 18px;
+    font-weight: 600;
+    border: 5px solid #420079;
 }
 
 .tables table thead .bosh{
@@ -468,11 +505,7 @@ table .down{
     border-radius: 0px 30px 0px 0px;
 }
 
-.tables table tbody td{
-    font-size: 18px;
-    font-weight: 600;
-    border: 5px solid blue;
-}
+
 
 .tables table tbody .hp3{
     border-radius: 0px 0px 0px 20px;
@@ -488,13 +521,129 @@ table .down{
     font-weight: 700;
     text-align: center;
     padding: 20px 0px;
-    border-top: 6px inset red;
-    border-bottom: 6px inset red;
+    border-top: 6px inset #25043E;
+    border-bottom: 6px inset #25043E;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 20px;
     text-shadow: 0px 0px 20px red;
 }
+
+
+
+
+
+
+
+
+.products_desktops{
+  background: #00071C;
+}
+
+.products_desktops .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+}
+
+.products_desktops .types{
+    position: relative;
+    display: flex;
+    transform: rotate(-25deg) skew(25deg);
+    transform-style: preserve-3d;
+}
+
+.types li{
+  position: relative;
+  list-style: none;
+  width: 160px;
+  height: 200px;
+  margin: 0px 30px;
+}
+
+.types li:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+.types li:after{
+    content: '';
+    position: absolute;
+    top:5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #2a2a2a;
+    transform-origin: right;
+    transform: skewY(-49deg);
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+.types li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: #2a2a2a;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px !important;
+    transition: 1.5s ease-out;
+  }
+.types li:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+  }
+  .types li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+  }
+.types li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: .8;
+  }
+.types li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: .6;
+  }
+.types li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+.types li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: .2;
+  }
+.types li:nth-child(1):hover span{
+    background: #52E19F !important;
+  }
+.types li:nth-child(2):hover span{
+    background: #2C3456 !important;
+  }
+.types li:nth-child(3):hover span{
+    background: #EA6E96 !important;
+  }
+.types li:nth-child(4):hover span{
+    background: #FCEB00 !important;
+  }
+
+
+
+
+
+
 
 .products_desktops{
     display: flex;
@@ -524,5 +673,155 @@ table .down{
 }
 
 .boxs{
-    border: 2px solid green;
+    margin-top: 20px;
+    border-top: 10px groove #25043E;
+}
+
+.boxs .apple_kompyuter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.apple_kompyuter h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.apple_kompyuter .laptop_apple{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #aee6ff;
+    transition: all .3s ease-in-out;
+    animation: rasm 3s linear infinite;
+}
+
+.apple_kompyuter .laptop_apple:hover{
+    background-color: #FF007D;
+}
+
+.laptop_apple a{
+    font-size: 70px;
+    color: white;
+}
+
+.apple_kompyuter .turn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #aee6ff;
+    text-align: center;
+    padding-top: 13px;
+    animation: turn 2s linear infinite;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.apple_kompyuter .turn:hover{
+    background-color: #FF007D;
+}
+
+@keyframes turn{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.turn a{
+    color: white;
+    font-size: 30px;
+}
+
+
+
+
+.cards{
+    border-top: 5px groove #aee6ff;
+    padding-top: 10px;
+}
+
+.card{
+    width: 400px;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+}
+
+.setup1{
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+    left: -800px;
+    position: absolute;
+    transition: all .3s ease;
+    padding: 0px 20px;
+    background-color: rgba(255, 255, 255,0.13);
+    backdrop-filter: blur(5px);
+}
+.setup1 img{
+    width: 100%;
+}
+.setups:hover .setup1{
+   left: 0px;
+}
+
+.setups{
+    padding: 0px 30px;
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border: 2px solid red;
+    position: relative;
+    overflow: hidden;
+    animation: setups 10s linear infinite;
+}
+
+@keyframes setups {
+    0%{
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-5.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 2s;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-1.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 5s;
+    }
+    50%{
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-2.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 8s;
+    }
+    75%{
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-1.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 11s;
+    }
+    100%{
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-5.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 14s;
+        background-repeat: no-repeat;
+    }
+}
+
+.setup{
+    padding: 10px 0px;
+}
+
+.setup .information{
+   line-height: 30px;
 }
