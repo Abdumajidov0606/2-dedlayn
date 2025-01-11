@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+nav {
+    background-color: white;
+}
+
+nav .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: logo 3s linear infinite;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.logo img {
+    width: 100%;
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+
+.icons a {
+    font-size: 20px;
+    color: black;
+}
+
+
+.hero .rasm {
+    width: 1200px;
+    height: 550px;
+}
+
+.rasm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section {
+    background-color: aliceblue;
+}
+
+section h2 {
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.abouts {
+    text-align: justify;
+}
+
+.abouts p {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.boxs {
+    margin-top: 20px;
+    border-top: 10px groove #25043E;
+}
+
+.boxs .apple_kompyuter {
+    text-align: center  ;
+    padding: 20px 20px;
+}
+
+.apple_kompyuter h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.apple_kompyuter .laptop_apple {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #aee6ff;
+    transition: all .3s ease-in-out;
+    animation: rasm 3s linear infinite;
+}
+
+.apple_kompyuter .laptop_apple:hover {
+    background-color: #FF007D;
+}
+
+.laptop_apple a {
+    font-size: 70px;
+    color: white;
+}
+
+.apple_kompyuter .turn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #aee6ff;
+    text-align: center;
+    padding-top: 13px;
+    animation: turn 2s linear infinite;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.apple_kompyuter .turn:hover {
+    background-color: #FF007D;
+}
+
+@keyframes turn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.turn a {
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.cards {
+    border-top: 5px groove #aee6ff;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 380px;
+    text-align: center;
+    /* border: 2px solid blue; */
+    box-shadow: 0px 0px 10px 4px gray;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.setup1 {
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+    left: -800px;
+    position: absolute;
+    transition: all .3s ease;
+    padding: 0px 26px;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(5px);
+}
+
+
+
+.setup1 img {
+    width: 100%;
+}
+
+.setups:hover .setup1 {
+    left: 0px;
+}
+
+.setups {
+    padding: 0px 30px;
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    animation: setups 10s linear infinite;
+}
+
+@keyframes setups {
+    0% {
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-5.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 2s;
+        background-repeat: no-repeat;
+    }
+
+    25% {
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-1.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 5s;
+    }
+
+    50% {
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-2.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 8s;
+    }
+
+    75% {
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-1.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 11s;
+    }
+
+    100% {
+        background-image: url("https://nout.uz/wp-content/uploads/2021/12/m1-macbook-5.jpg");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 14s;
+        background-repeat: no-repeat;
+    }
+}
+
+.lenovos {
+    overflow: hidden;
+}
+
+.lenovos img {
+    width: 100%;
+}
+
+.setups1 {
+    animation: setups1 10s linear infinite;
+}
+
+@keyframes setups1 {
+    0% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/c4ca4238a0b923820dcc509a6f75849b2023092209252097244i7FVDfh4uW.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 2s;
+        background-repeat: no-repeat;
+    }
+
+    25% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/a87ff679a2f3e71d9181a67b7542122c2023092209252093537PnQdI5Odau.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 5s;
+    }
+
+    50% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/e4da3b7fbbce2345d7772b0674a318d52023092209252094857ziRKEFWkBU.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 8s;
+    }
+
+    75% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/eccbc87e4b5ce2fe28308fd9f2a7baf32023092209252030376btWlv1vw48.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 11s;
+    }
+
+    100% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/c81e728d9d4c2f636f067f89cc14862c2023092209252062895PLKHLTWyLf.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 14s;
+        background-repeat: no-repeat;
+    }
+}
+
+.hps {
+    overflow: hidden;
+}
+
+.hps img {
+    width: 100%;
+}
+
+.setups2 {
+    animation: setups2 10s linear infinite;
+}
+
+@keyframes setups2 {
+    0% {
+        background-image: url("https://seeklogo.com/images/H/Hewlett_Packard-logo-31DC257A8E-seeklogo.com.png");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 2s;
+        background-repeat: no-repeat;
+    }
+
+    25% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/67f72b06e30651b03d136555325d0fa62023122016090444156XDd93cgG5j.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 5s;
+    }
+
+    50% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/86a10ff2f98f7240cb3ce249d008070220231220160904913107tn2eoIE7Q.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 8s;
+    }
+
+    75% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/f60004a1c3f1418bc4941d6b215b7b6920231220160909875067RyooTItKj.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 11s;
+    }
+
+    100% {
+        background-image: url("https://assets.asaxiy.uz/product/items/desktop/d7180f5fb6761cd5c022892bf0146bc62023122016090579712hcetwZceUJ.jpg.webp");
+        background-position: center;
+        background-size: 90%;
+        animation-delay: 14s;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.setup {
+    padding: 10px 0px;
+}
+
+.card button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #52E19F;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 4px #52E19F;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.card button:hover {
+    transform: scale(1.1);
+}
+
+.setup .information {
+    line-height: 30px;
+}
+
+.information li {
+    margin-bottom: 10px;
+}
+
+.information .yangi {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.information .nom {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.information .turi {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2C3456;
+}
+
+
+
+.tanlov {
+    margin-top: 30px;
+    border: 2px solid red;
+    background-color: #FF007D;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+}
+
+.tanlov h6 {
+    font-size: 17px;
+    font-weight: 600;
+    color: yellow;
+}
+
+.maxsulot p {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.has {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.qolgan .watch {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 17px;
+}
+
+.watch p {
+    font-size: 17px;
+    text-decoration: underline;
+    font-weight: 500;
+    color: white;
+}
+
+.watch button {
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #52E19F;
+    box-shadow: 0px 0px 6px 3px #52E19F;
+    transition: all .3s ease;
+}
+
+.watch button:hover {
+    transform: scale(1.1);
+    background-color: #aee6ff;
+    box-shadow: 0px 0px 6px 3px #aee6ff;
+}
+
+.watch button a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.watch button a:hover {
+    color: #25043E;
+}
+
+
+footer {
+    background-color: black;
+}
+
+footer .container {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+footer button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #52E19F;
+}
+
+footer button a {
+    color: red;
+    text-decoration: none;
+}
